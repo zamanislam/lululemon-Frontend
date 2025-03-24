@@ -1,0 +1,45 @@
+#parentF{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   margin-left: 50px;
+   grid-row: 50px;
+}
+
+#parentF div h2{
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 50px;
+}
+
+#parentF div p{
+    color:  #333;
+    padding-top: 10px;
+}
+
+#parentF div h3{
+    color:  #575757;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size:smaller;
+}
+
+#parentF div h2:hover{
+    cursor: pointer;
+    text-decoration: underline red;
+}
+
+#parentF div h3:hover{
+    cursor: pointer;
+    text-decoration: underline red;
+}
+
+#parentF div p:hover{
+    cursor: pointer;
+    text-decoration: underline red;
+}
+
+
+#parentF div img{
+    margin-top: 40px;
+}

@@ -15,7 +15,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/lululemonproducts`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/products`);
         setProducts(response.data);
       } catch (error) {
         console.error('Failed to fetch products', error);

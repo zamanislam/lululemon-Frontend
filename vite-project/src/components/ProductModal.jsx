@@ -9,7 +9,7 @@ const ProductModal = ({ product, isOpen, onClose, onAddToCart }) => {
        
         <img src={product.image} alt={product.title} className="w-32 h-32 mx-auto" />
         <h2>{product.title}</h2>
-        <p>{product.description}</p>
+        
         <p>${product.price}</p>
         <button 
         onClick={onAddToCart(product)} 

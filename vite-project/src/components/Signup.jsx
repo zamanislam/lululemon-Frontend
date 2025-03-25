@@ -7,8 +7,8 @@ const Signup = () => {
     const [data,setData]=useState({
         username:"",
         email:"",
-        password:"",
-        role:""
+        password:""
+       
     })
     const [error,setError]=useState("")
 
@@ -65,12 +65,12 @@ const Signup = () => {
         onChange={(e)=>handleSignup(e)}
         value={data.password}
       />
-      <select onChange={(e)=>handleSignup(e)} value={data.role} className="border-black border rounded-sm" name="role" id="role">
+      {/* <select onChange={(e)=>handleSignup(e)} value={data.role} className="border-black border rounded-sm" name="role" id="role">
         <option value="">Select user role</option>
         <option value="reader">Reader</option>
         <option value="author">Author</option>
         <option value="admin">Admin</option>
-      </select>
+      </select> */}
       <button onClick={handleRegister} id="signup" className=" text-white p-2">Signup</button>
     </div>
   );
